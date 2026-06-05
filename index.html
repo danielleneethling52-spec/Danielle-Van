@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danielle Van | Luxury Digital Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:'Inter',sans-serif;
+background:#050505;
+color:#fff;
+overflow-x:hidden;
+}
+.hero{
+min-height:100vh;
+background:
+linear-gradient(rgba(5,5,5,.65),rgba(5,5,5,.8)),
+url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+}
+.hero-content{max-width:1000px}
+.badge{
+display:inline-block;
+padding:12px 20px;
+border:1px solid rgba(255,255,255,.2);
+border-radius:50px;
+backdrop-filter:blur(10px);
+margin-bottom:20px;
+}
+h1{
+font-size:clamp(3rem,8vw,6rem);
+line-height:1;
+margin-bottom:20px;
+background:linear-gradient(90deg,#fff,#8b5cf6,#60a5fa);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+.hero p{
+font-size:1.2rem;
+color:#d1d5db;
+max-width:800px;
+margin:0 auto 35px;
+}
+.btns{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+.btn{
+padding:16px 32px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+}
+.primary{
+background:linear-gradient(90deg,#8b5cf6,#3b82f6);
+color:#fff;
+}
+.secondary{
+border:1px solid rgba(255,255,255,.3);
+color:#fff;
+}
+section{
+padding:100px 8%;
+}
+.section-title{
+font-size:3rem;
+margin-bottom:20px;
+text-align:center;
+}
+.section-sub{
+text-align:center;
+max-width:800px;
+margin:0 auto 60px;
+color:#cbd5e1;
+}
+.glass{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,.08);
+border-radius:24px;
+}
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:-80px;
+padding:0 8%;
+}
+.stat{
+padding:35px;
+text-align:center;
+}
+.stat h3{font-size:3rem;color:#8b5cf6}
+.services,.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+.card{
+padding:30px;
+transition:.3s;
+}
+.card:hover{
+transform:translateY(-8px);
+border-color:#8b5cf6;
+}
+.card h3{
+margin-bottom:15px;
+}
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+.about img{
+width:100%;
+border-radius:24px;
+}
+.project img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:16px;
+margin-bottom:15px;
+}
+.cta{
+text-align:center;
+background:linear-gradient(135deg,#111,#1e1b4b);
+border-radius:30px;
+padding:80px 40px;
+}
+footer{
+padding:40px;
+text-align:center;
+color:#94a3b8;
+}
+@media(max-width:900px){
+.about{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="hero-content">
+<div class="badge">Luxury Digital Studio • Danielle Van</div>
+<h1>Luxury Websites.<br>Powerful Systems.</h1>
+<p>I build premium websites, booking platforms, WordPress solutions, custom plugins, API integrations and digital experiences that help businesses stand out and grow.</p>
+<div class="btns">
+<a href="#projects" class="btn primary">View My Work</a>
+<a href="#contact" class="btn secondary">Start Your Project</a>
+</div>
+</div>
+</section>
+
+<div class="stats">
+<div class="glass stat">
+<h3>10+</h3>
+<p>Projects Delivered</p>
+</div>
+<div class="glass stat">
+<h3>100%</h3>
+<p>Custom Solutions</p>
+</div>
+<div class="glass stat">
+<h3>5+</h3>
+<p>Years Experience</p>
+</div>
+<div class="glass stat">
+<h3>∞</h3>
+<p>Possibilities</p>
+</div>
+</div>
+
+<section>
+<h2 class="section-title">About Danielle</h2>
+<div class="about">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80">
+<div>
+<h3 style="font-size:2rem;margin-bottom:20px;">Not Just Another Web Designer</h3>
+<p style="line-height:1.8;color:#cbd5e1;">
+I combine strategy, design and development to create websites that do more than look beautiful.
+From booking systems and payment integrations to custom WordPress development and business automation, every solution is built to generate results.
+</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Services</h2>
+<p class="section-sub">Premium solutions built for ambitious businesses.</p>
+<div class="services">
+<div class="glass card"><h3>Luxury Website Design</h3><p>Beautiful websites built to convert visitors into customers.</p></div>
+<div class="glass card"><h3>WordPress Development</h3><p>Custom WordPress websites and advanced functionality.</p></div>
+<div class="glass card"><h3>Booking Systems</h3><p>Accommodation, events and property booking solutions.</p></div>
+<div class="glass card"><h3>API Integrations</h3><p>Guesty, Yoco, payment gateways and custom integrations.</p></div>
+<div class="glass card"><h3>E-Commerce</h3><p>Online stores designed for growth and sales.</p></div>
+<div class="glass card"><h3>Business Automation</h3><p>Reduce manual work and improve efficiency.</p></div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Featured Work</h2>
+<div class="projects">
+<div class="glass card project">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80">
+<h3>Luxury Villa Booking Platform</h3>
+<p>Custom booking experience for premium accommodation.</p>
+</div>
+<div class="glass card project">
+<img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80">
+<h3>Property Management System</h3>
+<p>Integrated dashboard and booking management tools.</p>
+</div>
+<div class="glass card project">
+<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80">
+<h3>E-Commerce Solution</h3>
+<p>Custom checkout and payment gateway integrations.</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="cta glass" id="contact">
+<h2 class="section-title">Ready To Build Something Exceptional?</h2>
+<p class="section-sub">Let's create a website or system that elevates your brand.</p>
+<a href="mailto:your@email.com" class="btn primary">Contact Danielle</a>
+</div>
+</section>
+
+<footer>
+© 2026 Danielle Van • Luxury Digital Studio
+</footer>
+
+</body>
+</html>
